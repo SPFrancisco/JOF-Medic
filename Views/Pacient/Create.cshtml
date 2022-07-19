@@ -1,0 +1,95 @@
+﻿@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2 class="mb-5">Registro de paciente</h2>
+
+<form>
+    <div class="form-row mb-3">
+        <div class="col mr-3">
+            <label for="NombrePaciente">Nombres: </label>
+            <input class="form-control" type="text" id="NombrePaciente" required />
+        </div>
+        <div class="col">
+            <label for="ApellidoPaciente">Apellidos: </label>
+            <input class="form-control" type="text" id="ApellidoPaciente" required />
+        </div>
+    </div>
+
+    <div class="form-row mb-3">
+        <div class="col mr-3">
+            <label for="Cedula">Cedula: </label>
+            <input class="form-control" type="text" id="Cedula" />
+        </div>
+        <div class="col">
+            <label for="EstadoCivil">Estado Civil: </label>
+            <input class="form-control" type="text" id="EstadoCivil" />
+        </div>
+    </div>
+
+    <div class="form-row mb-3">
+        <div class="col mr-3">
+            <label for="Calendar">Fecha de nacimiento: </label>
+            <input class="form-control" type="date" id="Calendar" />
+        </div>
+        <div class="col">
+            <label for="Nacionalidad">Nacionalidad: </label>
+            <select class="form-control" id="Sexo">
+                <option selected>Dominicana</option>
+                <option>Haitiana</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="form-row mb-3">
+        <div class="col mr-3">
+            <label for="Sexo">Sexo: </label>
+            <select class="form-control" id="Sexo">
+                <option selected value="m">Masculino</option>
+                <option value="f">Femenino</option>
+            </select>
+        </div>
+        <div class="col">
+            <label for="ApellidoPaciente">Numero telefonico: </label>
+            <input class="form-control" type="tel" id="Numerotelefonico" />
+        </div>
+    </div>
+
+    <div class="form-row mb-3">
+        <div class="col">
+            <label for="Direccion">Dirección: </label>
+            <input class="form-control" type="text" id="Direccion" />
+        </div>
+    </div>
+
+    <div class="form-row mb-3">
+        <div class="col mr-3">
+            <label for="Provincia">Provincia: </label>
+            <select class="form-control" id="Provincia">
+                <option selected>Azua</option>
+                <option>San Pedro de Macoris</option>
+            </select>
+        </div>
+        <div class="col mr-3">
+            <label for="Municipio">Municipio: </label>
+            <select class="form-control" id="Municipio">
+                <option selected>Consuelo</option>
+                <option>San Pedro de Macoris</option>
+                <option>Quisqueya</option>
+            </select>
+        </div>
+        <div class="col">
+            <label for="Sector">Sector: </label>
+            <select class="form-control" id="Sector">
+                <option selected>Miramar</option>
+                <option>Playa de Muerto</option>
+            </select>
+        </div>
+    </div>
+
+    <button type="submit" class="btn btn-primary align-items-center">Guardar</button>
+
+</form>
+
+
