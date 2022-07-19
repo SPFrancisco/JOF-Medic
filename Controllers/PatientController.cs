@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace JOF_Medic.Controllers
 {
-    public class PacientController : Controller
+    public class PatientController : Controller
     {
         // GET: PacientController
         public ActionResult Index()
